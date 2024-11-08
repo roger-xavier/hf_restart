@@ -2,7 +2,7 @@ name: Check and Restart iizhiApi Space
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # 每30分钟检查一次,一个月2*24*30=1440<2000(普通账户限制)
+    - cron: '0 */3 * * *'  # 每3h检查一次,一个月8*30*6<2000(普通账户限制)
   workflow_dispatch:  # 允许手动触发
 jobs:
   check-space-status:
